@@ -18,7 +18,7 @@ function App() {
 
   const generateAsciiArt = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/ascii', { text: input, font: font });
+      const response = await axios.post('https://ascii-generator-7xhu.onrender.com', { text: input, font: font });
       setOutput(response.data.ascii);
     } catch (error) {
       console.error('Error generating ASCII art: ', error);
